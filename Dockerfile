@@ -30,7 +30,7 @@ RUN apt-get update \
         ssl-cert \
     && rm -rf /var/lib/apt/lists/*
 
-RUN mkdir -p /var/run/prosody && chown prosody:adm /var/run/prosody
+RUN mkdir -p /var/run/prosody
 
 # Install and configure prosody
 COPY ./prosody.deb /tmp/prosody.deb
